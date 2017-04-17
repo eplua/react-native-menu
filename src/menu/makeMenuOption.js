@@ -1,5 +1,5 @@
 module.exports = (React, ReactNative, { model, styles }) => {
-  const { View, TouchableWithoutFeedback } = ReactNative;
+  const { View, TouchableOpacity } = ReactNative;
 
   const MenuOption = React.createClass({
     displayName: 'MenuOption',
@@ -18,11 +18,11 @@ module.exports = (React, ReactNative, { model, styles }) => {
         ));
       }
       return (
-        <TouchableWithoutFeedback onPress={this.onPress}>
+        <TouchableOpacity onPress={this.onPress}>
           <View style={[styles.option, this.props.style]}>
             { this.props.children }
           </View>
-        </TouchableWithoutFeedback>
+        </TouchableOpacity>
       );
     }
   });
