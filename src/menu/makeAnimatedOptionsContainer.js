@@ -11,10 +11,10 @@ module.exports = (React, ReactNative) => {
     componentDidMount() {
       this.setTimeout(() => {
         Animated.timing(this.state.scaleAnim, {
-          duration: 60,
+          duration: 30,
           toValue: 1
         }).start();
-      }, 16);
+    }, 8);
     },
     render() {
       return (

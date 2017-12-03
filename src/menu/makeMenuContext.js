@@ -23,7 +23,7 @@ module.exports = (React, ReactNative, { constants, model, styles }) => {
   };
 
   const defaultOptionsContainerRenderer = (options) => (
-    <ScrollView>
+    <ScrollView keyboardShouldPersistTaps='always'>
       {options}
     </ScrollView>
   );
